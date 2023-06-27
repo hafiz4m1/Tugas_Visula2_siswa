@@ -1,17 +1,9 @@
 object Form1: TForm1
-  Left = 192
-  Top = 182
+  Left = 258
+  Top = 133
   Width = 1044
-  Height = 540
-  Caption = 
-    '++++3++++++++633333333333333333333333333333333333333333333333333' +
-    '3333333336666666666666666666666666666666666666666666666666666666' +
-    '6666666666666666666666666666666666666666666666666666666666666666' +
-    '6666666666666666666666666666666666666666666666666666666666666666' +
-    '6666666666666666666666666666666666666666666666666666666666666666' +
-    '6666666666666666666666666666666666666666666666666666666666666666' +
-    '6666666666666666666666666666666666666666666666666666666666666666' +
-    '6666666'
+  Height = 538
+  Caption = 'form1'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -170,6 +162,9 @@ object Form1: TForm1
     Height = 21
     ItemHeight = 13
     TabOrder = 6
+    Items.Strings = (
+      'Laki-Laki'
+      'Perempuan')
   end
   object cbb2: TComboBox
     Left = 424
@@ -178,6 +173,10 @@ object Form1: TForm1
     Height = 21
     ItemHeight = 13
     TabOrder = 7
+    Items.Strings = (
+      'X'
+      'XI'
+      'XII')
   end
   object cbb3: TComboBox
     Left = 424
@@ -186,6 +185,10 @@ object Form1: TForm1
     Height = 21
     ItemHeight = 13
     TabOrder = 8
+    Items.Strings = (
+      'Bahasa'
+      'IPA'
+      'IPS')
   end
   object edt6: TEdit
     Left = 424
@@ -222,19 +225,23 @@ object Form1: TForm1
     Height = 21
     ItemHeight = 13
     TabOrder = 13
+    Items.Strings = (
+      'Aktif'
+      'NonAktif')
   end
   object dbgrd1: TDBGrid
     Left = 8
     Top = 376
     Width = 1009
     Height = 120
-    DataSource = ds1
+    DataSource = DataSource1
     TabOrder = 14
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    OnCellClick = dbgrd1CellClick
   end
   object btn1: TButton
     Left = 16
@@ -272,6 +279,14 @@ object Form1: TForm1
     TabOrder = 18
     OnClick = btn4Click
   end
+  object btn5: TButton
+    Left = 400
+    Top = 256
+    Width = 75
+    Height = 25
+    Caption = 'Laporan'
+    TabOrder = 19
+  end
   object con1: TZConnection
     ControlsCodePage = cGET_ACP
     UTF8StringsAsWideField = False
@@ -290,12 +305,17 @@ object Form1: TForm1
     Connection = con1
     Active = True
     SQL.Strings = (
-      'select * from tabel_siswa')
+      'select * from tb_siswa')
     Params = <>
     Left = 752
     Top = 80
   end
   object ds1: TDataSource
+    DataSet = ZQuery1
+    Left = 752
+    Top = 136
+  end
+  object DataSource1: TDataSource
     DataSet = ZQuery1
     Left = 752
     Top = 136
