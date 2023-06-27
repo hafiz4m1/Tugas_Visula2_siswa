@@ -43,8 +43,12 @@ type
     dbgrd1: TDBGrid;
     btn1: TButton;
     btn2: TButton;
+    btn3: TButton;
+    btn4: TButton;
     procedure btn1Click(Sender: TObject);
     procedure btn2Click(Sender: TObject);
+    procedure btn3Click(Sender: TObject);
+    procedure btn4Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -81,6 +85,35 @@ ZQuery1.SQL.Clear;
   ZQuery1.SQL.Add('select * from tabel_siswa');
   ZQuery1.Open;
   Showmessage('DATA BERHASIL DI EDIT..');
+end;
+
+procedure TForm1.btn3Click(Sender: TObject);
+begin
+ZQuery1.SQL.Clear;
+  ZQuery1.SQL.Add('delete from tabel+siswa where id="'+id+'"');
+  ZQuery1.ExecSQL;
+
+  ZQuery1.SQL.Clear;
+  ZQuery1.SQL.Add('select * from tabel_siswa');
+  ZQuery1.Open;
+  ShowMessage('DATA BERHASIL DIHAPUS..');
+end;
+
+procedure TForm1.btn4Click(Sender: TObject);
+begin
+edt1.Clear;
+edt2.Clear;
+edt3.Clear;
+edt4.Clear;
+edt5.Clear;
+cbb1.Clear;
+cbb2.Clear;
+cbb3.Clear;
+edt6.Clear;
+edt7.Clear;
+edt8.Clear;
+edt9.Clear;
+cbb4.Clear;
 end;
 
 end.

@@ -3,7 +3,15 @@ object Form1: TForm1
   Top = 182
   Width = 1044
   Height = 540
-  Caption = 'Form1'
+  Caption = 
+    '++++3++++++++633333333333333333333333333333333333333333333333333' +
+    '3333333336666666666666666666666666666666666666666666666666666666' +
+    '6666666666666666666666666666666666666666666666666666666666666666' +
+    '6666666666666666666666666666666666666666666666666666666666666666' +
+    '6666666666666666666666666666666666666666666666666666666666666666' +
+    '6666666666666666666666666666666666666666666666666666666666666666' +
+    '6666666666666666666666666666666666666666666666666666666666666666' +
+    '6666666'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -245,6 +253,24 @@ object Form1: TForm1
     Caption = 'Edit'
     TabOrder = 16
     OnClick = btn2Click
+  end
+  object btn3: TButton
+    Left = 208
+    Top = 256
+    Width = 75
+    Height = 25
+    Caption = 'Hapus'
+    TabOrder = 17
+    OnClick = btn3Click
+  end
+  object btn4: TButton
+    Left = 304
+    Top = 256
+    Width = 75
+    Height = 25
+    Caption = 'Clear'
+    TabOrder = 18
+    OnClick = btn4Click
   end
   object con1: TZConnection
     ControlsCodePage = cGET_ACP
