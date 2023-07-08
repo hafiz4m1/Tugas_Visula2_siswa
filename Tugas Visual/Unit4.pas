@@ -24,6 +24,8 @@ type
     btn1: TButton;
     btn2: TButton;
     btn3: TButton;
+    btn4: TButton;
+    procedure btn4Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -36,5 +38,17 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TForm4.btn4Click(Sender: TObject);
+begin
+ZQuery1.SQL.Clear;
+  ZQuery1.SQL.Add('insert into tb_user values(null, "'+edt1.Text+'", "'+edt2.Text+'", "'+edt3.Text+'","'+edt4.Text+'")');
+  ZQuery1.ExecSQL;
+
+  ZQuery1.SQL.Clear;
+  ZQuery1.SQL.Add('select * from tb_user');
+  ZQuery1.Open;
+  Showmessage('DATA BERHASIL DI SIMPAN..');
+end;
 
 end.

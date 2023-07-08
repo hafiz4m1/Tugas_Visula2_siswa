@@ -73,7 +73,7 @@ end;
 procedure TForm2.btn2Click(Sender: TObject);
 begin
 ZQuery1.SQL.Clear;
-  ZQuery1.SQL.Add('update tb_hubungan set siswa_id="'+edt1.Text+'", ortu_id="'+edt2.Text+'", status_hub="'+edt3.Text+'", keterangan="'+edt4.Text+'"');
+  ZQuery1.SQL.Add('update tb_hubungan set siswa_id="'+edt1.Text+'", ortu_id="'+edt2.Text+'", status_hub="'+edt3.Text+'", keterangan="'+edt4.Text+'" where id="'+id+'"');
   ZQuery1.ExecSQL;
 
   ZQuery1.SQL.Clear;

@@ -1,9 +1,9 @@
 object Form2: TForm2
-  Left = 155
-  Top = 185
+  Left = 242
+  Top = 235
   Width = 1044
   Height = 540
-  Caption = 'Form2'
+  Caption = 'Hubungan'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText

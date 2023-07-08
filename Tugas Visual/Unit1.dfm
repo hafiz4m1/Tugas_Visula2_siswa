@@ -1,9 +1,9 @@
 object Form1: TForm1
-  Left = 258
-  Top = 133
+  Left = 370
+  Top = 247
   Width = 1044
   Height = 538
-  Caption = 'form1'
+  Caption = 'Siswa'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -303,7 +303,6 @@ object Form1: TForm1
   end
   object ZQuery1: TZQuery
     Connection = con1
-    Active = True
     SQL.Strings = (
       'select * from tb_siswa')
     Params = <>

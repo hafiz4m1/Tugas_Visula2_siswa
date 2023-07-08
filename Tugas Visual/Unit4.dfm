@@ -87,7 +87,7 @@ object Form4: TForm4
     Top = 152
     Width = 75
     Height = 25
-    Caption = 'btn1'
+    Caption = 'simpan'
     TabOrder = 5
   end
   object btn2: TButton
@@ -95,7 +95,7 @@ object Form4: TForm4
     Top = 152
     Width = 75
     Height = 25
-    Caption = 'btn2'
+    Caption = 'edit'
     TabOrder = 6
   end
   object btn3: TButton
@@ -103,8 +103,17 @@ object Form4: TForm4
     Top = 152
     Width = 75
     Height = 25
-    Caption = 'btn3'
+    Caption = 'hapus'
     TabOrder = 7
+  end
+  object btn4: TButton
+    Left = 288
+    Top = 152
+    Width = 75
+    Height = 25
+    Caption = 'clear'
+    TabOrder = 8
+    OnClick = btn4Click
   end
   object con1: TZConnection
     ControlsCodePage = cGET_ACP
