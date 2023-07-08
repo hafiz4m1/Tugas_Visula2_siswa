@@ -17,6 +17,15 @@ type
     lbl7: TLabel;
     lbl8: TLabel;
     lbl9: TLabel;
+    edt1: TEdit;
+    edt2: TEdit;
+    edt3: TEdit;
+    edt4: TEdit;
+    edt5: TEdit;
+    edt6: TEdit;
+    edt7: TEdit;
+    edt8: TEdit;
+    edt9: TEdit;
   private
     { Private declarations }
   public

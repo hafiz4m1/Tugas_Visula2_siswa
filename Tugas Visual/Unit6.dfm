@@ -76,4 +76,76 @@ object Form6: TForm6
     Height = 13
     Caption = 'lbl9'
   end
+  object edt1: TEdit
+    Left = 96
+    Top = 32
+    Width = 121
+    Height = 21
+    TabOrder = 0
+    Text = 'edt1'
+  end
+  object edt2: TEdit
+    Left = 96
+    Top = 72
+    Width = 121
+    Height = 21
+    TabOrder = 1
+    Text = 'edt2'
+  end
+  object edt3: TEdit
+    Left = 96
+    Top = 104
+    Width = 121
+    Height = 21
+    TabOrder = 2
+    Text = 'edt3'
+  end
+  object edt4: TEdit
+    Left = 96
+    Top = 136
+    Width = 121
+    Height = 21
+    TabOrder = 3
+    Text = 'edt4'
+  end
+  object edt5: TEdit
+    Left = 96
+    Top = 176
+    Width = 121
+    Height = 21
+    TabOrder = 4
+    Text = 'edt5'
+  end
+  object edt6: TEdit
+    Left = 96
+    Top = 216
+    Width = 121
+    Height = 21
+    TabOrder = 5
+    Text = 'edt6'
+  end
+  object edt7: TEdit
+    Left = 96
+    Top = 248
+    Width = 121
+    Height = 21
+    TabOrder = 6
+    Text = 'edt7'
+  end
+  object edt8: TEdit
+    Left = 96
+    Top = 288
+    Width = 121
+    Height = 21
+    TabOrder = 7
+    Text = 'edt8'
+  end
+  object edt9: TEdit
+    Left = 96
+    Top = 312
+    Width = 121
+    Height = 21
+    TabOrder = 8
+    Text = 'edt9'
+  end
 end
